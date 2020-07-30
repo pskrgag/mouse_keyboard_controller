@@ -24,10 +24,10 @@ static int __init mouse_init(void)
 	// Allocate input struct 
 	mouse_dev = input_allocate_device();
         if (!mouse_dev) {
-                printk(KERN_ERR "button.c: Not enough memory\n");
+                printk(KERN_ERR "Not enough memory\n");
                 return -ENOMEM;
         }
-	mouse_dev->name = "MblWKA SUKA";
+	mouse_dev->name = "mouse_shit";
 	mouse_dev->relbit[0] = BIT_MASK(REL_X) | BIT_MASK(REL_Y) | BIT_MASK(REL_WHEEL);
 	mouse_dev->evbit[0] =  BIT_MASK(EV_REL);
 
