@@ -70,7 +70,7 @@ static int key_cb(struct notifier_block *nblock, unsigned long code, void *_para
 		break;
 	case 0x20:
 		input_report_rel(mouse_dev, REL_X, 10);
-
+		break;
 	default:
 		break;
 	}
